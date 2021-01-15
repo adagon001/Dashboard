@@ -1,0 +1,7 @@
+{
+    "sk": {"oh":"Otváracia doba", "cause":"Príčina", "snowfall":"SNEHOVÁ POKRÝVKA", "snowfall24h":"POSLEDNÝCH 24H", "avalanche":"LAVÍNOVÁ SITUÁCIA"},
+    "pl": {"oh":"Godziny otwarcia", "cause":"Przyczyna", "snowfall":"ŚNIEŻNA POKRYWA", "snowfall24h":"OSTATNIE 24H", "avalanche":"SYTUACJA LAWINOWA"},
+    "cs": {"oh":"Otevírací doba", "cause":"Příčina", "snowfall":"SNĚHOVÁ POKRÝVKA", "snowfall24h":"POSLEDNÍCH 24H", "avalanche":"LAVÍNOVÁ SITUACE"},
+    "de": {"oh":"Öffnungszeiten", "cause":"Ursache", "snowfall":"SCHNEEDECKE", "snowfall24h":"LETZTE 24H", "avalanche":"LAWINENSITUATION"},
+    "en": {"oh":"Otváracia doba", "cause":"Cause", "snowfall":"SNOW COVER", "snowfall24h":"LAST 24H", "avalanche":"AVALANCHE SITUATION"}
+}
