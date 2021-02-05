@@ -2,7 +2,7 @@
     <%if (apiData.cams.length>=3 ) { %>
         <div class="bigstream">
             <%if (apiData.cams[0].stream.url!=null ) { %>
-            <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls loop muted autoplay preload="auto" data-setup='{}'>
+            <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls poster="<%= apiData.cams[0].thumbnail._hq.url %>" loop muted autoplay preload="auto" data-setup='{"bigPlayButton": false, "errorDisplay": false,"loadingSpinner": false}'>
             <source src=<%= apiData.cams[0].stream.url %>  type=
                 <%if (apiData.cams[0].stream.url.substring(apiData.cams[0].stream.url.length - 3 ) == "mp4"){ %>
                     <%= "video/mp4" %> 
@@ -25,8 +25,8 @@
         </div>
         <div class="smallstreams">
             <div class="smallstream">
-                <%if (apiData.cams[0].stream.url!=null ) { %>
-                <video id="my_video_1" class="smallvideo video-js vjs-fluid vjs-default-skin" controls muted autoplay preload="auto" data-setup='{}'>
+                <%if (apiData.cams[1].stream.url!=null ) { %>
+                <video id="my_video_1" class="smallvideo video-js vjs-fluid vjs-default-skin" poster="<%= apiData.cams[1].thumbnail._hq.url %>" loop controls muted autoplay preload="auto" data-setup='{"bigPlayButton": false, "errorDisplay": false,"loadingSpinner": false}'>
                 <source src=<%= apiData.cams[1].stream.url %>  type=
                     <%if (apiData.cams[1].stream.url.substring(apiData.cams[1].stream.url.length - 3 ) == "mp4"){ %>
                         <%= "video/mp4" %> 
@@ -44,8 +44,8 @@
                 </span>
             </div>
             <div class="smallstream" >
-                <%if (apiData.cams[0].stream.url!=null ) { %>
-                <video id="my_video_1" class="smallvideo video-js vjs-fluid vjs-default-skin" controls muted autoplay preload="auto" data-setup='{}'>
+                <%if (apiData.cams[2].stream.url!=null ) { %>
+                <video id="my_video_1" class="smallvideo video-js vjs-fluid vjs-default-skin" poster="<%= apiData.cams[2].thumbnail._hq.url %>" loop controls muted autoplay preload="auto" data-setup='{"bigPlayButton": false, "errorDisplay": false,"loadingSpinner": false}'>
                 <source src=<%= apiData.cams[2].stream.url %>  type=
                     <%if (apiData.cams[2].stream.url.substring(apiData.cams[0].stream.url.length - 3 ) == "mp4"){ %>
                         <%= "video/mp4" %> 
@@ -65,7 +65,7 @@
         </div>
     <% }else if(apiData.cams.length==1 ){%>
         <div class="bigstream">
-            <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls muted autoplay preload="auto" data-setup='{}'>
+            <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" poster="<%= apiData.cams[0].thumbnail._hq.url %>" loop controls muted autoplay preload="auto" data-setup='{"bigPlayButton": false, "errorDisplay": false,"loadingSpinner": false}'>
             <source src=<%= apiData.cams[0].stream.url %>  type=
                 <%if (apiData.cams[0].stream.url.substring(apiData.cams[0].stream.url.length - 3 ) == "mp4"){ %>
                     <%= "video/mp4" %> 
@@ -84,7 +84,7 @@
         </div>
         <% }else if(apiData.cams.length==2 ){ %>
             <div class="bigstream">
-                <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls muted autoplay preload="auto" data-setup='{}'>
+                <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls muted autoplay poster="<%= apiData.cams[0].thumbnail._hq.url %>" preload="auto" data-setup='{"bigPlayButton": false, "errorDisplay": false,"loadingSpinner": false}'>
                 <source src=<%= apiData.cams[0].stream.url %>  type=
                     <%if (apiData.cams[0].stream.url.substring(apiData.cams[0].stream.url.length - 3 ) == "mp4"){ %>
                         <%= "video/mp4" %> 
@@ -102,7 +102,7 @@
                 <style>.bigstream{margin: 1vh 2%;}</style>
             </div>
             <div class="bigstream">
-                <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls muted autoplay preload="auto" data-setup='{}'>
+                <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" poster="<%= apiData.cams[1].thumbnail._hq.url %>" loop controls muted autoplay preload="auto" data-setup='{"bigPlayButton": false, "errorDisplay": false,"loadingSpinner": false}'>
                 <source src=<%= apiData.cams[1].stream.url %>  type=
                     <%if (apiData.cams[1].stream.url.substring(apiData.cams[1].stream.url.length - 3 ) == "mp4"){ %>
                         <%= "video/mp4" %> 
